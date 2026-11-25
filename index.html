@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tran Ngoc Tien — Multi-format Video Editor</title>
+<meta name="description" content="Tran Ngoc Tien, a multi-format short-form video editor: performance ads, viral B2B content, beauty brand films and an AI video pipeline.">
+<meta property="og:title" content="Tran Ngoc Tien — Multi-format Video Editor">
+<meta property="og:description" content="One editor. Every short-form format. 1.5M-view hits, VND 100M from one ad, up to 18 videos a day.">
+<meta property="og:image" content="img/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F8FF}
+a{color:#172447;text-decoration:none}a:hover{color:#2D5BFF}
+@keyframes rise{from{opacity:0;transform:translateY(44px)}to{opacity:1;transform:none}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.up{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.track{animation:marquee 40s linear infinite}.rev{animation-direction:reverse}.strip:hover .track{animation-play-state:paused}
+.spin{animation:spin 16s linear infinite}
+@supports (animation-timeline: view()){.rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 26%}}
+.lift{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}.lift:hover{transform:translateY(-8px);box-shadow:0 24px 44px -22px rgba(45,91,255,.45)}
+.lift img{transition:transform .6s cubic-bezier(.2,.8,.2,1)}.lift:hover img{transform:scale(1.05)}
+.btn{transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px -12px rgba(45,91,255,.6)}
+@keyframes orbit{0%,8%{transform:translateX(0) scale(1.12);z-index:5;opacity:1}20%{transform:translateX(150px) scale(.8);z-index:4;opacity:.95}40%{transform:translateX(90px) scale(.6);z-index:2;opacity:.55}60%{transform:translateX(-90px) scale(.6);z-index:1;opacity:.55}80%{transform:translateX(-150px) scale(.8);z-index:3;opacity:.95}92%,100%{transform:translateX(0) scale(1.12);z-index:5;opacity:1}}
+.orb{animation:orbit 15s cubic-bezier(.6,0,.4,1) infinite}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.14) translateY(-2%)}}@keyframes fill{from{width:0}to{width:100%}}
+.on .kb{animation:kb 5s ease-out forwards}.on .bar{animation:fill 5s linear forwards}.on .pulse{animation:rise .5s both}
+@media (prefers-reduced-motion:reduce){.up,.float,.track,.spin,.rv,.orb,.kb,.bar{animation:none!important}}
+</style>
+<style>html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<div style="background: #F5F8FF; color: #172447; font-family: Inter, system-ui, sans-serif; overflow: hidden">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 24px 32px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#top" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px; letter-spacing: -0.02em">tien<span style="color: #2D5BFF">.</span>video</a>
+<nav style="display: flex; flex-wrap: wrap; gap: 4px; font-size: 15px; font-weight: 500">
+<a href="#skills" style="padding: 10px 14px">What I do</a>
+<a href="#viral" style="padding: 10px 14px">Viral wall</a>
+<a href="#experience" style="padding: 10px 14px">Experience</a>
+<a class="btn" href="#contact" style="padding: 10px 20px; border-radius: 999px; background: #2D5BFF; color: #FFFFFF">Hire me</a>
+</nav>
+</header>
+
+<section id="top" style="max-width: 1240px; margin: 0 auto; padding: 32px 32px 56px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<p class="up" style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: #1E44D6"><span style="width: 10px; height: 10px; border-radius: 50%; background: #1FB36B"></span>Open to remote roles · Hanoi, UTC+7</p>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(48px, 7.2vw, 100px); line-height: 0.95; letter-spacing: -0.04em">
+<span class="up" style="display: block; animation-delay: .08s">One editor.</span>
+<span class="up" style="display: block; animation-delay: .18s"><span style="color: #2D5BFF">Every</span> short-form</span>
+<span class="up" style="display: block; animation-delay: .28s">format.</span>
+</h1>
+<p class="up" style="margin: 0; max-width: 580px; font-size: 19px; line-height: 1.6; color: #3E4A6B; animation-delay: .4s">I'm Tran Ngoc Tien, a multi-format video editor. I don't stay in one lane: I cut performance ads that sell, viral clips that travel, studio brand films, and run an AI pipeline that ships up to 18 videos a day.</p>
+<div class="up" style="display: flex; flex-wrap: wrap; gap: 12px; animation-delay: .5s">
+<a class="btn" href="mailto:trngoctien0505@gmail.com" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #2D5BFF; color: #FFFFFF; font-weight: 600; font-size: 16px">Start a project →</a>
+<a class="btn" href="#viral" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #FFFFFF; border: 1.5px solid #C9D5F5; font-weight: 600; font-size: 16px">See viral work</a>
+</div>
+</div>
+<div style="flex: 1 1 400px; position: relative; height: 540px; min-width: 300px">
+<div class="orb" style="position: absolute; left: 50%; top: 50%; width: 230px; margin: -170px 0 0 -115px; border-radius: 24px; overflow: hidden; border: 5px solid #FFFFFF; background: #DCE5FF; box-shadow: 0 26px 50px -22px rgba(23,36,71,.4); animation-delay: 0s">
+<img src="img/portrait.jpg" alt="Portrait of Tran Ngoc Tien" style="display: block; width: 100%; aspect-ratio: 3 / 4.2; object-fit: cover; object-position: top">
+</div>
+<div class="orb" style="position: absolute; left: 50%; top: 50%; width: 230px; margin: -170px 0 0 -115px; border-radius: 24px; overflow: hidden; border: 5px solid #FFFFFF; background: #DCE5FF; box-shadow: 0 26px 50px -22px rgba(23,36,71,.4); animation-delay: -3s">
+<img src="img/v-parking.jpg" alt="Viral video cover: automatic parking robot" style="display: block; width: 100%; aspect-ratio: 3 / 4.2; object-fit: cover; object-position: top">
+</div>
+<div class="orb" style="position: absolute; left: 50%; top: 50%; width: 230px; margin: -170px 0 0 -115px; border-radius: 24px; overflow: hidden; border: 5px solid #FFFFFF; background: #DCE5FF; box-shadow: 0 26px 50px -22px rgba(23,36,71,.4); animation-delay: -6s">
+<img src="img/cnbuy-1-5m.jpg" alt="Viral video cover: round study desk" style="display: block; width: 100%; aspect-ratio: 3 / 4.2; object-fit: cover; object-position: top">
+</div>
+<div class="orb" style="position: absolute; left: 50%; top: 50%; width: 230px; margin: -170px 0 0 -115px; border-radius: 24px; overflow: hidden; border: 5px solid #FFFFFF; background: #DCE5FF; box-shadow: 0 26px 50px -22px rgba(23,36,71,.4); animation-delay: -9s">
+<img src="img/v-antiflycam.jpg" alt="Viral video cover: anti-drone device" style="display: block; width: 100%; aspect-ratio: 3 / 4.2; object-fit: cover; object-position: top">
+</div>
+<div class="orb" style="position: absolute; left: 50%; top: 50%; width: 230px; margin: -170px 0 0 -115px; border-radius: 24px; overflow: hidden; border: 5px solid #FFFFFF; background: #DCE5FF; box-shadow: 0 26px 50px -22px rgba(23,36,71,.4); animation-delay: -12s">
+<img src="img/cnbuy-motor.jpg" alt="Viral video cover: electric motor" style="display: block; width: 100%; aspect-ratio: 3 / 4.2; object-fit: cover; object-position: top">
+</div>
+<div class="up" style="position: absolute; left: 4%; top: 18px; z-index: 9; background: #DDF77A; color: #263300; border-radius: 16px; padding: 12px 16px; display: flex; flex-direction: column; gap: 2px; animation-delay: .7s">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 28px; line-height: 1">1.5M</span>
+<span style="font-size: 13px">views, top video</span>
+</div>
+<div style="position: absolute; right: 4%; bottom: 6px; z-index: 9; width: 118px; height: 118px; border-radius: 50%; background: #2D5BFF; display: flex; align-items: center; justify-content: center">
+<svg class="spin" viewBox="0 0 120 120" width="108" height="108" aria-hidden="true" style="position: absolute"><defs><path id="ring" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"></path></defs><text style="font: 600 11px Inter, sans-serif; letter-spacing: 3px; fill: #FFFFFF"><textPath href="#ring">MULTI-FORMAT · AI-FIRST · 18 A DAY ·</textPath></text></svg>
+<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="#DDF77A"><path d="M8 5v14l11-7z"></path></svg>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 0 32px 64px">
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+
+<div class="rv" style="flex: 1 1 220px; min-width: 0; padding: 22px 24px; border-radius: 22px; background: #2D5BFF; color: #FFFFFF; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 46px; line-height: 1; letter-spacing: -0.03em">1.5M</span>
+<span style="font-size: 15px; line-height: 1.4">views on my top video</span>
+</div>
+
+
+<div class="rv" style="flex: 1 1 220px; min-width: 0; padding: 22px 24px; border-radius: 22px; background: #DDF77A; color: #263300; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 46px; line-height: 1; letter-spacing: -0.03em">11</span>
+<span style="font-size: 15px; line-height: 1.4">videos past 180K views</span>
+</div>
+
+
+<div class="rv" style="flex: 1 1 220px; min-width: 0; padding: 22px 24px; border-radius: 22px; background: #FFFFFF; color: #172447; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 46px; line-height: 1; letter-spacing: -0.03em">100M₫</span>
+<span style="font-size: 15px; line-height: 1.4">sales from one performance ad</span>
+</div>
+
+
+<div class="rv" style="flex: 1 1 220px; min-width: 0; padding: 22px 24px; border-radius: 22px; background: #E6EDFF; color: #172447; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 46px; line-height: 1; letter-spacing: -0.03em">18/day</span>
+<span style="font-size: 15px; line-height: 1.4">finished videos at peak</span>
+</div>
+
+</div>
+</section>
+
+<div style="background: #DDF77A; color: #172447; padding: 18px 0; transform: rotate(-1.2deg); margin: 0 -20px">
+<div class="track" style="display: flex; width: max-content">
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Parking robot 389K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Anti-drone gear 347K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Electric motors 342K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">5G excavator cabin 321K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Floating pontoons 302K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Confetti cannon 243K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Bait boat 197K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Drone licence 193K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Misting systems 192K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Robot gripper 186K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Parking robot 389K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Anti-drone gear 347K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Electric motors 342K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">5G excavator cabin 321K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Floating pontoons 302K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Confetti cannon 243K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Bait boat 197K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Drone licence 193K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Misting systems 192K<span style="color: #2D5BFF">✦</span></span>
+
+
+<span style="display: inline-flex; align-items: center; gap: 26px; padding-right: 26px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; white-space: nowrap">Robot gripper 186K<span style="color: #2D5BFF">✦</span></span>
+
+</div>
+</div>
+
+<section id="skills" style="max-width: 1240px; margin: 0 auto; padding: 104px 32px 32px; display: flex; flex-direction: column; gap: 36px">
+<div class="rv" style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
+<span style="font-size: 14px; font-weight: 600; color: #2D5BFF">What I do</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 64px); line-height: 1; letter-spacing: -0.035em">Four lanes I'm strongest in</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3E4A6B">Brands rarely need just one kind of video. I move between selling, entertaining, producing and automating, and each lane has numbers behind it.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px">
+
+<a class="lift rv" href="#lane-1" style="display: flex; flex-direction: column; gap: 14px; padding: 26px 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #DCE4F7">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #E6EDFF; color: #2D5BFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px">01</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.01em">Performance ads</span>
+<span style="font-size: 15px; line-height: 1.5; color: #56627F">TikTok Shop ads scripted around pain points, upsells and before/after proof.</span>
+<span style="margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; padding-top: 14px; border-top: 1px solid #E6EDFF"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; color: #2D5BFF">100M₫</span><span style="font-size: 13px; color: #56627F">from one video</span></span>
+</a>
+
+
+<a class="lift rv" href="#lane-2" style="display: flex; flex-direction: column; gap: 14px; padding: 26px 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #DCE4F7">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #E6EDFF; color: #2D5BFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px">02</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.01em">Viral short-form</span>
+<span style="font-size: 15px; line-height: 1.5; color: #56627F">Odd-product and factory clips with hooks that hold the first three seconds.</span>
+<span style="margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; padding-top: 14px; border-top: 1px solid #E6EDFF"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; color: #2D5BFF">1.5M</span><span style="font-size: 13px; color: #56627F">top views</span></span>
+</a>
+
+
+<a class="lift rv" href="#lane-3" style="display: flex; flex-direction: column; gap: 14px; padding: 26px 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #DCE4F7">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #E6EDFF; color: #2D5BFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px">03</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.01em">Brand and studio</span>
+<span style="font-size: 15px; line-height: 1.5; color: #56627F">Lighting, shooting, talent direction and 12 brand video formats.</span>
+<span style="margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; padding-top: 14px; border-top: 1px solid #E6EDFF"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; color: #2D5BFF">12</span><span style="font-size: 13px; color: #56627F">formats shipped</span></span>
+</a>
+
+
+<a class="lift rv" href="#lane-4" style="display: flex; flex-direction: column; gap: 14px; padding: 26px 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #DCE4F7">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #E6EDFF; color: #2D5BFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px">04</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.01em">AI video pipeline</span>
+<span style="font-size: 15px; line-height: 1.5; color: #56627F">Claude, Codex and AI voice wired into a daily production line.</span>
+<span style="margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; padding-top: 14px; border-top: 1px solid #E6EDFF"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; color: #2D5BFF">18/day</span><span style="font-size: 13px; color: #56627F">peak output</span></span>
+</a>
+
+</div>
+</section>
+
+<section id="viral" style="margin-top: 96px; background: #E6EDFF; padding: 88px 0">
+<div class="rv" style="max-width: 1240px; margin: 0 auto; padding: 0 32px 36px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
+<span style="font-size: 14px; font-weight: 600; color: #2D5BFF">Viral wall</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 64px); line-height: 1; letter-spacing: -0.035em">Viral is a habit, not a fluke</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3E4A6B">11 videos past 180K views, and the range to match: B2B content for factory sourcing and logistics, plus beauty content for a skincare brand.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="padding: 8px 14px; border-radius: 999px; background: #2D5BFF; color: #FFFFFF; font-size: 14px; font-weight: 600">Viral short-form</span>
+<span style="padding: 8px 14px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 600">B2B · Factory sourcing</span>
+<span style="padding: 8px 14px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 600">B2B · Logistics</span>
+<span style="padding: 8px 14px; border-radius: 999px; background: #DDF77A; color: #263300; font-size: 14px; font-weight: 600">Beauty · Skincare</span>
+</div>
+</div>
+<a class="btn" href="https://www.tiktok.com/@cnbuy_app" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #FFFFFF; font-weight: 600">Open the channel ↗</a>
+</div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 32px 14px; display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; color: #3E4A6B"><span>B2B · Chinese factory sourcing for Vietnamese business owners</span><span style="color: #2D5BFF">CNBUY</span></div>
+<div class="strip" data-play="s1" style="overflow: hidden">
+<div class="track" style="display: flex; width: max-content; gap: 14px; padding: 6px 7px 18px">
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7699718045840772359" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-1-5m.jpg" alt="Video cover: Exam season: the round study desk" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #DDF77A; color: #263300; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 1.5M</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Exam season: the round study desk</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-parking.jpg" alt="Video cover: Automatic parking robot" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 389K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Automatic parking robot</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-antiflycam.jpg" alt="Video cover: Anti-drone interceptor" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 347K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Anti-drone interceptor</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7700174183648480532" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-motor.jpg" alt="Video cover: Electric-motor factory" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 342K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Electric-motor factory</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-cabin5g.jpg" alt="Video cover: 5G remote excavator cabin" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 321K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">5G remote excavator cabin</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-pontoon.jpg" alt="Video cover: Floating pontoon docks" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 302K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Floating pontoon docks</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-confetti.jpg" alt="Video cover: Confetti cannon" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 243K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Confetti cannon</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-baitboat.jpg" alt="Video cover: Remote bait boat" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 197K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Remote bait boat</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-dronelicense.jpg" alt="Video cover: Drone licence exam" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 193K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Drone licence exam</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7700960443455655175" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-mist.jpg" alt="Video cover: Farm misting systems" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 192K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Farm misting systems</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-robotarm.jpg" alt="Video cover: Industrial robot gripper" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 186K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Industrial robot gripper</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7702759160630234388" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-fabric.jpg" alt="Video cover: Textile mills" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 101K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Textile mills</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7699736518205738258" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-scooter.jpg" alt="Video cover: Folding e-scooters" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 75K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Folding e-scooters</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7699718045840772359" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-1-5m.jpg" alt="Video cover: Exam season: the round study desk" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #DDF77A; color: #263300; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 1.5M</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Exam season: the round study desk</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-parking.jpg" alt="Video cover: Automatic parking robot" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 389K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Automatic parking robot</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-antiflycam.jpg" alt="Video cover: Anti-drone interceptor" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 347K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Anti-drone interceptor</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7700174183648480532" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-motor.jpg" alt="Video cover: Electric-motor factory" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 342K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Electric-motor factory</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-cabin5g.jpg" alt="Video cover: 5G remote excavator cabin" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 321K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">5G remote excavator cabin</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-pontoon.jpg" alt="Video cover: Floating pontoon docks" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 302K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Floating pontoon docks</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-confetti.jpg" alt="Video cover: Confetti cannon" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 243K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Confetti cannon</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-baitboat.jpg" alt="Video cover: Remote bait boat" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 197K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Remote bait boat</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-dronelicense.jpg" alt="Video cover: Drone licence exam" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 193K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Drone licence exam</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7700960443455655175" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-mist.jpg" alt="Video cover: Farm misting systems" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 192K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Farm misting systems</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/v-robotarm.jpg" alt="Video cover: Industrial robot gripper" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 186K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Industrial robot gripper</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7702759160630234388" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-fabric.jpg" alt="Video cover: Textile mills" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 101K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Textile mills</span>
+</a>
+
+
+<a class="lift" href="https://www.tiktok.com/@cnbuy_app/video/7699736518205738258" style="flex: 0 0 196px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF">
+<img class="kb" src="img/cnbuy-scooter.jpg" alt="Video cover: Folding e-scooters" style="display: block; width: 100%; aspect-ratio: 3 / 3.8; object-fit: cover; object-position: top">
+<span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #DDF77A"></span>
+<span style="position: absolute; top: 8px; left: 8px; background: #2D5BFF; color: #FFFFFF; border-radius: 999px; padding: 5px 11px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px">▶ 75K</span>
+</div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px; line-height: 1.35">Folding e-scooters</span>
+</a>
+
+</div>
+</div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 26px 32px 14px; display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; color: #3E4A6B"><span>Beauty · Skincare performance and brand content</span><span style="color: #2D5BFF">Heyme</span></div>
+<div class="strip" data-play="s2" style="overflow: hidden">
+<div class="track rev" style="display: flex; width: max-content; gap: 14px; padding: 6px 7px 8px">
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-box.jpg" alt="Peach scrub gift box" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Peach scrub gift box</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-studio.jpg" alt="Studio shower-gel spot" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Studio shower-gel spot</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-orange.jpg" alt="Vitamin C body gel" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Vitamin C body gel</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-model.jpg" alt="Self-care routine" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Self-care routine</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-texture.jpg" alt="Scrub texture macro" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Scrub texture macro</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-rose.jpg" alt="Lifestyle moment" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Lifestyle moment</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-jar.jpg" alt="Body scrub close-up" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Body scrub close-up</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-mirror.jpg" alt="Mirror routine" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Mirror routine</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-apply.jpg" alt="Application shot" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Application shot</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-unbox.jpg" alt="Unboxing" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Unboxing</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-desk.jpg" alt="Late-night self-care" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Late-night self-care</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-box.jpg" alt="Peach scrub gift box" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Peach scrub gift box</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-studio.jpg" alt="Studio shower-gel spot" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Studio shower-gel spot</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-orange.jpg" alt="Vitamin C body gel" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Vitamin C body gel</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-model.jpg" alt="Self-care routine" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Self-care routine</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-texture.jpg" alt="Scrub texture macro" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Scrub texture macro</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-rose.jpg" alt="Lifestyle moment" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Lifestyle moment</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-jar.jpg" alt="Body scrub close-up" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Body scrub close-up</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-mirror.jpg" alt="Mirror routine" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Mirror routine</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/heyme-apply.jpg" alt="Application shot" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Application shot</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-unbox.jpg" alt="Unboxing" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Unboxing</span>
+</div>
+
+
+<div class="lift" style="flex: 0 0 236px; display: flex; flex-direction: column; gap: 10px; padding: 8px 8px 12px; border-radius: 20px; background: #FFFFFF">
+<div style="position: relative; overflow: hidden; border-radius: 14px; background: #DCE5FF"><img class="kb" src="img/h-desk.jpg" alt="Late-night self-care" style="display: block; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover"><span class="bar" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: #2D5BFF"></span></div>
+<span style="padding: 0 4px; font-weight: 600; font-size: 14px">Late-night self-care</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="lane-1" style="max-width: 1240px; margin: 0 auto; padding: 104px 32px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div class="rv" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 14px; font-weight: 600; color: #2D5BFF">Lane 01 · Performance ads · Heyme skincare</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.4vw, 54px); line-height: 1; letter-spacing: -0.03em">Videos built to convert</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3E4A6B">A year as the brand's in-house editor: 6 to 13 finished ads a week for TikTok Shop, with the ad budget and storefront run by me too. One winning video brought in VND 100 million.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">3-second hooks</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Pain-point scripts</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Upsell and bundle ads</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Before / after</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">TikTok Ads budgets</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">TikTok Shop operations</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">CTR, retention, conversion</span></div>
+</div>
+<div class="" data-play="l1" style="flex: 1.2 1 460px; min-width: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
+<div class="lift rv" style="grid-column: span 2; grid-row: span 2; border-radius: 22px; overflow: hidden"><img class="kb" src="img/heyme-studio.jpg" alt="Heyme shower gel in a green studio set" style="display: block; width: 100%; height: 100%; object-fit: cover"></div>
+<div class="lift rv" style="border-radius: 22px; overflow: hidden"><img class="kb" src="img/heyme-orange.jpg" alt="Heyme orange gel with sliced oranges" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover"></div>
+<div class="lift rv" style="border-radius: 22px; overflow: hidden"><img class="kb" src="img/heyme-box.jpg" alt="Heyme peach body scrub gift box" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover"></div>
+</div>
+</section>
+
+<section id="lane-2" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 24px; display: flex; flex-wrap: wrap-reverse; gap: 48px; align-items: center">
+<div class="" data-play="l2" style="flex: 1.2 1 460px; min-width: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
+<div class="lift rv" style="border-radius: 22px; overflow: hidden"><img class="kb" src="img/cnbuy-motor.jpg" alt="CNBUY cover: electric motor" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top"></div>
+<div class="lift rv" style="border-radius: 22px; overflow: hidden; transform: translateY(28px)"><img class="kb" src="img/v-cabin5g.jpg" alt="CNBUY cover: 5G excavator cabin" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top"></div>
+<div class="lift rv" style="border-radius: 22px; overflow: hidden"><img class="kb" src="img/v-pontoon.jpg" alt="CNBUY cover: floating pontoon" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top"></div>
+</div>
+<div class="rv" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 14px; font-weight: 600; color: #2D5BFF">Lane 02 · Viral short-form · CNBUY</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.4vw, 54px); line-height: 1; letter-spacing: -0.03em">Factory footage people can't scroll past</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3E4A6B">Five videos a day for a 124K-follower channel. I pick odd, never-seen-in-Vietnam products, write the Vietnamese voice-over and win the first three seconds. About one comment in five asks for a price.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Douyin sourcing</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Vietnamese voice-over writing</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Shot-to-line matching</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Product trend research</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Cover design</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">5 videos a day</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Comment-led ideas</span></div>
+</div>
+</section>
+
+<section id="lane-3" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div class="rv" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 14px; font-weight: 600; color: #2D5BFF">Lane 03 · Brand and studio production</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.4vw, 54px); line-height: 1; letter-spacing: -0.03em">From light set-up to final grade</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3E4A6B">I shoot as well as edit: studio lighting, talent direction and product photography. The Heyme library alone covers 12 formats, from 15-second teasers to Tết storytelling films.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Studio lighting</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Location shooting</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Talent direction</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Product photography</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Premiere Pro</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">After Effects</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Colour and sound</span></div>
+</div>
+<div class="rv" style="flex: 1.2 1 460px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px">
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">01</span>
+<span style="font-weight: 600; font-size: 15px">Pain-point ads</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">02</span>
+<span style="font-weight: 600; font-size: 15px">Upsell ads</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">03</span>
+<span style="font-weight: 600; font-size: 15px">Before / after</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">04</span>
+<span style="font-weight: 600; font-size: 15px">Storytelling</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">05</span>
+<span style="font-weight: 600; font-size: 15px">Product promo</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">06</span>
+<span style="font-weight: 600; font-size: 15px">Teasers</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">07</span>
+<span style="font-weight: 600; font-size: 15px">TVC</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">08</span>
+<span style="font-weight: 600; font-size: 15px">Lifestyle</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">09</span>
+<span style="font-weight: 600; font-size: 15px">Trend-based</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">10</span>
+<span style="font-weight: 600; font-size: 15px">Educational</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">11</span>
+<span style="font-weight: 600; font-size: 15px">Podcast clips</span>
+</div>
+
+
+<div class="lift" style="padding: 16px; border-radius: 18px; background: #FFFFFF; border: 1px solid #DCE4F7; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 14px; color: #2D5BFF">12</span>
+<span style="font-weight: 600; font-size: 15px">Seasonal campaigns</span>
+</div>
+
+</div>
+</section>
+
+<section id="lane-4" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 24px; display: flex; flex-direction: column; gap: 32px">
+<div class="rv" style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 14px; font-weight: 600; color: #2D5BFF">Lane 04 · AI video pipeline</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.4vw, 54px); line-height: 1; letter-spacing: -0.03em">AI does the lifting. I make the cut.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3E4A6B">I built the pipeline that runs three channels at once: CNBUY, the logistics brand CNTRANS and my own faceless channel. Scripts, voice and project assembly are automated; the hook, shot order and pacing stay with me.</p>
+</div>
+<div style="flex: 1 1 360px; display: flex; flex-wrap: wrap; gap: 8px"><span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Claude and Claude Code</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">OpenAI Codex</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">CapCut automation</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">AI voice and voice cloning</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Batch production</span>
+<span style="padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DCE4F7; font-size: 14px; font-weight: 500">Multi-channel planning</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch">
+
+<div class="rv" style="flex: 1 1 190px; min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 24px 22px; border-radius: 22px; background: #FFFFFF; color: #172447">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 34px; line-height: 1">01</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Source</span>
+<span style="font-size: 15px; line-height: 1.5">Sharp Douyin footage matched to each line of the script.</span>
+</div>
+
+
+<div class="rv" style="flex: 1 1 190px; min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 24px 22px; border-radius: 22px; background: #E6EDFF; color: #172447">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 34px; line-height: 1">02</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Script</span>
+<span style="font-size: 15px; line-height: 1.5">A week of hook-first voice-overs drafted with Claude.</span>
+</div>
+
+
+<div class="rv" style="flex: 1 1 190px; min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 24px 22px; border-radius: 22px; background: #DCE5FF; color: #172447">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 34px; line-height: 1">03</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Voice</span>
+<span style="font-size: 15px; line-height: 1.5">AI text-to-speech or a cloned voice in one clean pass.</span>
+</div>
+
+
+<div class="rv" style="flex: 1 1 190px; min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 24px 22px; border-radius: 22px; background: #2D5BFF; color: #FFFFFF">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 34px; line-height: 1">04</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Assemble</span>
+<span style="font-size: 15px; line-height: 1.5">Codex builds the CapCut project; I order the shots.</span>
+</div>
+
+
+<div class="rv" style="flex: 1 1 190px; min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 24px 22px; border-radius: 22px; background: #DDF77A; color: #263300">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 34px; line-height: 1">05</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Review</span>
+<span style="font-size: 15px; line-height: 1.5">Retention and comments brief the next batch.</span>
+</div>
+
+</div>
+</section>
+
+<section id="experience" style="max-width: 1240px; margin: 0 auto; padding: 104px 32px 32px; display: flex; flex-wrap: wrap; gap: 40px">
+<div class="rv" style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 14px; font-weight: 600; color: #2D5BFF">Experience</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(34px, 4.4vw, 54px); line-height: 1; letter-spacing: -0.035em">Two years of short-form</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #56627F">BBA, Thang Long University (2021–2025). Vietnamese native, English for business.</p>
+</div>
+<div style="flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+
+<div class="rv" style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 22px 24px; border-radius: 20px; background: #FFFFFF; border: 1px solid #DCE4F7">
+<span style="flex: 0 0 160px; font-size: 14px; font-weight: 600; color: #2D5BFF">Mar 2026 – now</span>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Video Editor <span style="color: #56627F; font-weight: 600">· Flyer VN</span></span>
+<span style="font-size: 15px; line-height: 1.55; color: #3E4A6B">CNBUY and CNTRANS TikTok channels: scripts, sourcing and editing at up to 18 videos a day on an AI pipeline I built.</span>
+</div>
+</div>
+
+
+<div class="rv" style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 22px 24px; border-radius: 20px; background: #FFFFFF; border: 1px solid #DCE4F7">
+<span style="flex: 0 0 160px; font-size: 14px; font-weight: 600; color: #2D5BFF">Feb 2025 – Feb 2026</span>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Content and Video <span style="color: #56627F; font-weight: 600">· Heyme</span></span>
+<span style="font-size: 15px; line-height: 1.55; color: #3E4A6B">Studio and location shoots, performance edits, TikTok Ads and TikTok Shop for a skincare brand.</span>
+</div>
+</div>
+
+
+<div class="rv" style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 22px 24px; border-radius: 20px; background: #FFFFFF; border: 1px solid #DCE4F7">
+<span style="flex: 0 0 160px; font-size: 14px; font-weight: 600; color: #2D5BFF">Oct 2024 – Jan 2025</span>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Content Marketing <span style="color: #56627F; font-weight: 600">· DT Group</span></span>
+<span style="font-size: 15px; line-height: 1.55; color: #3E4A6B">SEO content for web, Facebook and TikTok; lead generation and sales.</span>
+</div>
+</div>
+
+
+<div class="rv" style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 22px 24px; border-radius: 20px; background: #FFFFFF; border: 1px solid #DCE4F7">
+<span style="flex: 0 0 160px; font-size: 14px; font-weight: 600; color: #2D5BFF">Mar – Sep 2024</span>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 21px">Marketing Intern <span style="color: #56627F; font-weight: 600">· Suon Muoi</span></span>
+<span style="font-size: 15px; line-height: 1.55; color: #3E4A6B">Promotion tracking on food-delivery apps and customer research.</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="contact" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 64px">
+<div class="rv" style="border-radius: 36px; background: #2D5BFF; color: #FFFFFF; padding: clamp(36px, 6vw, 80px); display: flex; flex-wrap: wrap; gap: 36px; justify-content: space-between; align-items: flex-end">
+<div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(44px, 6.2vw, 92px); line-height: 0.94; letter-spacing: -0.04em">Need videos that <span style="color: #DDF77A">perform</span>?</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #E6EDFF">Open to full-time remote roles with brands and agencies. UTC+7, overlapping Europe and Australia.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; font-size: 17px">
+<a class="btn" href="mailto:trngoctien0505@gmail.com" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: #DDF77A; color: #172447; font-weight: 600">trngoctien0505@gmail.com</a>
+<a href="https://www.tiktok.com/@cnbuy_app" style="color: #FFFFFF">tiktok.com/@cnbuy_app ↗</a>
+<span>+84 369 839 692</span>
+</div>
+</div>
+<p style="margin: 24px 0 0; font-size: 13px; color: #56627F">© 2026 Tran Ngoc Tien. Brand work shown for portfolio purposes.</p>
+</section>
+
+</div>
+<script>
+(function(){
+  var els = document.querySelectorAll('[data-play]');
+  if (!('IntersectionObserver' in window)) { els.forEach(function(el){ el.classList.add('on'); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { threshold: 0.35 });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
